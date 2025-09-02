@@ -1,0 +1,9 @@
+type BucketItem @model {
+    id: ID!
+    title: String!
+    description: String
+    completed: Boolean
+}
+
+
+

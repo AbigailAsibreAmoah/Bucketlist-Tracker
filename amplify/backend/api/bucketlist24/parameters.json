@@ -1,0 +1,5 @@
+{
+  "AppSyncApiName": "bucketlist24",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false
+}
