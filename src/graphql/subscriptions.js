@@ -4,14 +4,16 @@
 export const onCreateBucketItem = /* GraphQL */ `
   subscription OnCreateBucketItem(
     $filter: ModelSubscriptionBucketItemFilterInput
+    $owner: String
   ) {
-    onCreateBucketItem(filter: $filter) {
+    onCreateBucketItem(filter: $filter, owner: $owner) {
       id
       title
       description
       completed
       createdAt
       updatedAt
+      owner
       __typename
     }
   }
@@ -19,14 +21,16 @@ export const onCreateBucketItem = /* GraphQL */ `
 export const onUpdateBucketItem = /* GraphQL */ `
   subscription OnUpdateBucketItem(
     $filter: ModelSubscriptionBucketItemFilterInput
+    $owner: String
   ) {
-    onUpdateBucketItem(filter: $filter) {
+    onUpdateBucketItem(filter: $filter, owner: $owner) {
       id
       title
       description
       completed
       createdAt
       updatedAt
+      owner
       __typename
     }
   }
@@ -34,14 +38,16 @@ export const onUpdateBucketItem = /* GraphQL */ `
 export const onDeleteBucketItem = /* GraphQL */ `
   subscription OnDeleteBucketItem(
     $filter: ModelSubscriptionBucketItemFilterInput
+    $owner: String
   ) {
-    onDeleteBucketItem(filter: $filter) {
+    onDeleteBucketItem(filter: $filter, owner: $owner) {
       id
       title
       description
       completed
       createdAt
       updatedAt
+      owner
       __typename
     }
   }

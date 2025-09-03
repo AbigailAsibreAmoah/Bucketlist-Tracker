@@ -1,9 +1,10 @@
-type BucketItem @model {
-    id: ID!
-    title: String!
-    description: String
-    completed: Boolean
+type BucketItem @model @auth(rules: [{ allow: owner }]) {
+  id: ID!
+  title: String!
+  description: String
+  completed: Boolean!
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
 }
-
 
 

@@ -10,6 +10,7 @@ export const getBucketItem = /* GraphQL */ `
       completed
       createdAt
       updatedAt
+      owner
       __typename
     }
   }
@@ -28,6 +29,7 @@ export const listBucketItems = /* GraphQL */ `
         completed
         createdAt
         updatedAt
+        owner
         __typename
       }
       nextToken

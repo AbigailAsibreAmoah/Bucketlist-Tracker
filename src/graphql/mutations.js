@@ -13,6 +13,7 @@ export const createBucketItem = /* GraphQL */ `
       completed
       createdAt
       updatedAt
+      owner
       __typename
     }
   }
@@ -29,6 +30,7 @@ export const updateBucketItem = /* GraphQL */ `
       completed
       createdAt
       updatedAt
+      owner
       __typename
     }
   }
@@ -45,6 +47,7 @@ export const deleteBucketItem = /* GraphQL */ `
       completed
       createdAt
       updatedAt
+      owner
       __typename
     }
   }
